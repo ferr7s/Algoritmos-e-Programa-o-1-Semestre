@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <!--1a - Escreva um programa que sorteia um número de 1 a 10 e dá duas chances para que o usuário acerte.-->
+</head>
+
+<body>
+    <script>
+        //A função random() do objeto Math retorna um número pseudo-aleatório.
+        //Usamos a função Math.floor() para retirar a parte flutuante (números decimais).
+        //Para gerar números aleatórios na casa do inteiros, devemos multiplicar o método por um inteiro qualquer.
+
+        let sorteado = Math.floor((Math.random() * 10) + 1)
+
+        let tentativa1 = window.prompt('Digite o número sorteado!')
+
+        if (tentativa1 == sorteado) {
+            document.write('Parabéns você acertou!')
+        } else {
+            let tentativa2 = window.prompt('Tente novamente!')
+            if (tentativa2 == sorteado) {
+                document.write('Parabéns você acertou!')
+            }
+            else {
+                document.write('Você errou!' + ' o número era ' + sorteado)
+            }
+        }
+    </script>
+</body>
+
+</html>

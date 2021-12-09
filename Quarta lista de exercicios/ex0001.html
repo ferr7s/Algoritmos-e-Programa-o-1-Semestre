@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <!--1c - Faça o mesmo programa anterior, agora com 3 palpites.-->
+</head>
+
+<body>
+    <script>
+        let sorteado = Math.floor((Math.random() * 10) + 1)
+
+        let tentativa = window.prompt('Digite o número sorteado!')
+
+        if (tentativa == sorteado) {
+            document.write('Parabéns você acertou!')
+        } else {
+            if (tentativa > sorteado) {
+                tentativa = window.prompt('Tente um número menor!')
+            }
+            else {
+                tentativa = window.prompt('Tente um número maior!')
+            }
+            if (tentativa == sorteado) {
+                document.write('Parabéns você acertou!')
+            }
+            else {
+                let tentativa1 = window.prompt('Tente novamente!')
+                if (tentativa1 == sorteado) {
+                    document.write('Parabéns você acertou!')
+                }
+                else {
+                    document.write('Você errou!' + ' o número era ' + sorteado)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

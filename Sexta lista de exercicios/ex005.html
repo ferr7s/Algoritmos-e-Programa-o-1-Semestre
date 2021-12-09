@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--informe também a altura média destes 5 atletas-->
+</head>
+
+<body>
+    <script>
+        let cont = 1;
+        let soma = 0;
+        let recorde = 0;
+        let nomeRecordista;
+
+        while (cont <= 5) {
+            let nome = window.prompt('Digite o nome do atleta')
+            let altura = window.prompt('Digite a altura do atleta')
+
+            //Variavel para calcular a media de altura dos atletas
+            soma += altura
+
+            //Armazena a altura e o nome do atleta mais alto em outra variável
+            if (altura > recorde) {
+                recorde = altura
+                nomeRecordista = nome
+            }
+            cont++
+        }
+        document.write('A altura do atleta mais alto é: ' + recorde + '<br>')
+        document.write('Seu nome é: ' + nomeRecordista)
+        document.write('A média de altura dos atletas é: ' + soma / 5)
+    </script>
+</body>
+
+</html>

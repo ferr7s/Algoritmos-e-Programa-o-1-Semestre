@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <!--2 - Sorteie dois números de 1 a 5 e peça que o usuário acerte os dois números, não necessariamente na mesma ordem.-->
+</head>
+
+<body>
+    <script>
+        let sorteado1 = Math.floor((Math.random() * 5) + 1)
+        let sorteado2 = Math.floor((Math.random() * 5) + 1)
+        
+        let palpite1 = window.prompt('Digite um número de 1 a 5')
+        let palpite2 = window.prompt('Digite o outro número de 1 a 5')
+
+        if (sorteado1 == palpite1 && sorteado2 == palpite2 || sorteado1 == palpite2 && sorteado2 == palpite1) {
+            document.write('Parabéns voce acertou!')
+        } else {
+            document.write('Você errou! Eram ' + sorteado1 + ' e ' + sorteado2)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Adivinhe o número - Crie um programa que solicita um número ao usuário entre 1 e 10, sorteia um outro número dentro desta faixa de valores, e então diz se os dois números são iguais.-->
+</head>
+
+<body>
+    <script>
+        let sort = Math.floor((Math.random() * 10) + 1)
+        let cont = 0;
+        let n = window.prompt('Advinhe o número sorteado entre 1 e 10')
+
+        while (n != sort) {
+            n = window.prompt('Errou digite novamente')
+        }
+        document.write('Parabéns você acertou o número sorteado!')
+    </script>
+</body>
+
+</html>

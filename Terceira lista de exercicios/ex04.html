@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <!--4 - Incremente o exercício anterior, para o caso das medidas formarem um triângulo válido , informar qual o tipo de triângulo que eles formam: equilátero, isósceles ou escaleno.-->
+</head>
+
+<body>
+    <script>
+        let n1 = parseInt(window.prompt('Digite um lado:'))
+        let n2 = parseInt(window.prompt('Digite outro lado:'))
+        let n3 = parseInt(window.prompt('Digite mais um lado:'))
+
+        if (n1 + n2 > n3 && n2 + n3 > n1 && n3 + n1 > n2) {
+            if (n1 == n2 && n2 == n3) {
+                document.write('Triangulo equilatero!<br>')
+            }
+            else {
+                if (n1 == n2 || n1 == n3 || n3 == n2) {
+                    document.write('Triangulo isósceles!<br>')
+                }
+                else {
+                    document.write('Triangulo escaleno!<br>')
+                }
+            }
+        }
+        else {
+            document.write('Não pode ser um triangulo!')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--2 - Crie um programa que recebe números inteiros até que o usuário digite 0 e então exiba o maior e o menor. -->
+</head>
+
+<body>
+    <script>
+        let maior = 0;
+        let menor = 0;
+
+        for (let index = 1; index != 0; index++) {
+            let num = window.prompt('Digite um número: ')
+
+            if (menor > num) {
+                menor = num
+            }
+            if (maior < num) {
+                maior = num
+            }
+            if (num == 0) {
+                index == -1;
+            }
+        }
+        document.write('O maior número é: ' + maior + ' e o menor é: ' + menor)
+    </script>
+</body>
+
+</html>

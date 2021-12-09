@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <!--4 - Escreva um programa que joga par ou ímpar com o usuário.-->
+</head>
+
+<body>
+    <script>
+        let sorteado = Math.floor((Math.random() * 10) + 1)
+        //Escolha de par uo impar do usuário
+        let usuarioE = String(window.prompt('Escolha (p)ar ou (i)mpar'))
+
+        //Escolha do número do usuário
+        let usuarioN = window.prompt('Digite um número:')
+
+        //soma dos dedos
+        let total = sorteado + usuarioN
+
+        if (total % 2 == 0 && usuarioE == 'p' || total % 2 != 0 && usuarioE == 'i') {
+            document.write('Parabéns você ganhou!')            
+        } else { 
+            document.write('Você perdeu!')           
+        }
+
+    </script>
+</body>
+
+</html>

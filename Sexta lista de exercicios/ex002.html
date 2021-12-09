@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Faça um aprimoramente do programa anterior. Desta vez, seu programa deverá dar dicas, dizendo se o numero sorteado é maior ou menor, e permitir um novo palpite do usuário, ATÉ ELE ACERTAR. Mostrar quantas tentativas foram efetuadas (ele não irá sortear o número novamente).-->
+</head>
+
+<body>
+    <script>
+        let sort = Math.floor((Math.random() * 10) + 1)
+        let cont = 1;
+        let n = window.prompt('Advinhe o número sorteado entre 1 e 10')
+
+        while (n != sort) {
+            if (n < sort) {
+                window.alert('O número sorteado é maior, tente novamente')
+            }else{
+                window.alert('O número sorteado é menor, tente novamente')
+            }
+            n = window.prompt('Tente novamente')
+            cont++
+        }
+        document.write('Parabéns você acertou o número sorteado! <br> Tentativas: ' + cont)
+    </script>
+</body>
+
+</html>
